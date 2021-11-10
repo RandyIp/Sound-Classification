@@ -2,7 +2,7 @@
 Goal: Benchmarking machine learning techniques when used to classify the spoken digits from 0 to 9. Each sound file is transformed into a spectrogram prior to classification so this project uses image recognition techniques to try and classify sounds. 
 
 Supervised ML Techniques: 
-  -Gaussian Naive Bayes
+  Gaussian Naive Bayes
   -Decision Trees
   -K Nearest Neighbors 
 Unsupervised ML Techniques:
