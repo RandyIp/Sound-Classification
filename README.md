@@ -39,3 +39,7 @@ Overall accuracy: 65.59%
 
 * Deeper Analysis: 
 
+![image](https://user-images.githubusercontent.com/85899973/141378584-3c5c27cc-4285-4608-9dfb-393386f4184d.png)![image](https://user-images.githubusercontent.com/85899973/141378621-54096a8c-a7a0-4ff7-80e9-f3a6c4f4bfe5.png)![image](https://user-images.githubusercontent.com/85899973/141378667-c3b0a529-76ed-416f-9a7a-8658e6faa510.png)
+
+* Conclusion:
+
