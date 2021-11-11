@@ -1,21 +1,20 @@
 # Goal: 
-The goal of this project is to benchmark machine learning techniques when used to classify the sound files. 
+The goal of this project is to benchmark machine learning techniques when used to classify sound files. 
 
-# Project Breakdown
-The dataset usspoken digits from 0 to 9. Each sound file is transformed into a spectrogram prior to classification so this project uses image recognition techniques to try and classify sounds. 
-
-![image](https://user-images.githubusercontent.com/85899973/141192136-4e99f390-5a45-4fed-9dfe-183aee0da503.png)
-
-
-Supervised ML Techniques used:  
+Supervised Machine Learning Techniques used:  
 * Gaussian Naive Bayes
 * Decision Trees 
 * K Nearest Neighbors 
 
-Unsupervised ML Techniques used:  
+Unsupervised Machine Learning Techniques used:  
 * K Means
+# Dataset
+ 
+The dataset used can be found in the repository and is called MNIST_Spoken_Digits.rar. This dataset contains spoken digits from 0 to 9. There are 3000 .wav files in the dataset and each individual spoken digit has 300 .wav files. Each sound file is transformed into a spectrogram prior to classification so this project uses image recognition techniques to try and classify sounds. 
 
-Benchmarking:
+![image](https://user-images.githubusercontent.com/85899973/141192136-4e99f390-5a45-4fed-9dfe-183aee0da503.png)
+
+# Benchmarking
 
 Cross validation combined with confusion matrices were the main benchmarks. K means has it's own way of benchmarking since it is an unsupervised technique and will be discussed later.
 
@@ -26,10 +25,6 @@ Cross Validation:
 Confusion Matrix:
 
 The confusion matrix serves as a visual to see how well each machine learning technique performed. In my confusion matrices, the predicted labels are along the x-axis while the true labels are along the y-axis. Any number that is not along the diagonal of the matrix represents incorrect classifications.
-
-Example Confusion Matrix: 
-
-![image](https://user-images.githubusercontent.com/85899973/141202901-85c488f3-e3fb-4775-883d-dfa29b9328c5.png)
 
 Gaussian Naive Bayes:
 * How it works:  
