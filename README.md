@@ -1,15 +1,19 @@
-# Sound-Classification
-Goal: Benchmarking machine learning techniques when used to classify the spoken digits from 0 to 9. Each sound file is transformed into a spectrogram prior to classification so this project uses image recognition techniques to try and classify sounds. 
+# Goal: 
+The goal of this project is to benchmark machine learning techniques when used to classify the sound files. 
 
-Supervised ML Techniques:  
+# Project Breakdown
+The dataset usspoken digits from 0 to 9. Each sound file is transformed into a spectrogram prior to classification so this project uses image recognition techniques to try and classify sounds. 
+
+![image](https://user-images.githubusercontent.com/85899973/141192136-4e99f390-5a45-4fed-9dfe-183aee0da503.png)
+
+
+Supervised ML Techniques used:  
 * Gaussian Naive Bayes
 * Decision Trees 
 * K Nearest Neighbors 
 
-Unsupervised ML Techniques:  
+Unsupervised ML Techniques used:  
 * K Means
-
-![image](https://user-images.githubusercontent.com/85899973/141192136-4e99f390-5a45-4fed-9dfe-183aee0da503.png)
 
 Benchmarking:
 
@@ -30,4 +34,10 @@ Example Confusion Matrix:
 Gaussian Naive Bayes:
 * How it works:  
 
-Gaussian Naive Bayes is a model based supervised machine learning technique. It assumes that each class (or each of the spoken digits from 0 to 9) can be approximated by a Gaussian distribution (or equivalently, normal distribution). The training data is used to get the maximum likelihood estimators (MLE) of each Gaussian distribution for each class.  
+Gaussian Naive Bayes is a model based supervised machine learning technique. It assumes that each class (or each of the spoken digits from 0 to 9) can be approximated by a Gaussian distribution (or equivalently, normal distribution). The training data is used to get the maximum likelihood estimators (MLE) for the parameters of each Gaussian distribution for each class.  
+
+* Results: 
+
+![image](https://user-images.githubusercontent.com/85899973/141359174-cc156ad7-0932-4303-ad91-1220cb8405cf.png)
+
+Overall accuracy: 65.59%
