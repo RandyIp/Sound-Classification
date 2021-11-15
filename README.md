@@ -43,6 +43,10 @@ Overall accuracy: 65.59%
 
 * Conclusion:  
 Overall, Gaussian Naive Bayes performed poorly. It has an overall accuracy of 65.59% which is a little better than pure random guessing. 
+
   * The accuracy can be further analyzed by looking at the accuracy given a true label and the accuracy give a predicted label. Given any true label, the accuracy fluctuates between 46% and 77%. This isn't very impressive as it suggests for digits like 2,5 and 7 the model is just purely guessing and even for it's best digit (spoken digit 8) it only does ok at best. 
   * A similar analysis can be done given that the model has predicted a spoken digit. Given any predicted label the accuracy fluctuates between 46% and 82%. This is also a poor result. Given that the model predicts a digit like 2,5 or 9, it is as good as a random guess. Given digits like 0,4 or 6 the model performs ok at best.
-Deeper analysis shows that this particular model overpredicts 9 as the spoken digit. Within the code are tests using this model without the spoken digit 9 but since the results did not improve much, they were not added to this document. 
+  * This particular model overpredicts 9 as the spoken digit. Within the code are tests using this model without the spoken digit 9 but since the results did not improve much, they were not added to this document. 
+
+# Decision Tree: 
+
