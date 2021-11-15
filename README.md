@@ -24,7 +24,7 @@ Cross validation combined with confusion matrices were the main benchmarks. K me
 
 **Confusion Matrix:**
 
-The confusion matrix serves as a visual to see how well each machine learning technique performed. In my confusion matrices, the predicted labels are along the x-axis while the true labels are along the y-axis. Any number that is not along the diagonal of the matrix represents incorrect classifications.
+The confusion matrix serves as a visual to see how well each machine learning technique performed. In my confusion matrices, the predicted labels are along the x-axis while the true labels are along the y-axis. Any number that is not along the diagonal of the matrix represents incorrect classifications. (Note: There are 10 different tests so the confusion matrices being shown are a sum total of all 10 confusion matrices.)
 
 # Gaussian Naive Bayes:
 * How it works:  
@@ -35,7 +35,7 @@ Gaussian Naive Bayes is a model based supervised machine learning technique. It 
 
 ![image](https://user-images.githubusercontent.com/85899973/141359174-cc156ad7-0932-4303-ad91-1220cb8405cf.png)
 
-Overall accuracy: 65.59%
+Overall Accuracy: 65.59%
 
 * Deeper Analysis: 
 
@@ -49,4 +49,11 @@ Overall, Gaussian Naive Bayes performed poorly. It has an overall accuracy of 65
   * This particular model overpredicts 9 as the spoken digit. Within the code are tests using this model without the spoken digit 9 but since the results did not improve much, they were not added to this document. 
 
 # Decision Tree: 
+* How it works:
+ 
+Decision Trees try to classify data points by separating each data point by their features (or equivalently the columns in this case). Generally, decision trees perform better when the features are highly correlated to the class that is being predicted. This means that decision trees generally do not perform well for image recognition such as our tests with spectrograms. Each pixel of the spectrogram is a feature in this case but each pixel also contains very little information about the classification of the overall data point. 
+
+Even though the results are expected to be poor, the goal of this project is to benchmark each technique. This particular experiment is to verify the expected result. 
+
+* Result: 
 
