@@ -10,7 +10,7 @@ Unsupervised Machine Learning Techniques used:
 * K Means
 # Dataset
  
-The dataset used can be found in the repository and is called MNIST_Spoken_Digits.rar. This dataset contains spoken digits from 0 to 9. There are 3000 .wav files in the dataset and each individual spoken digit has 300 .wav files. Each sound file is transformed into a spectrogram prior to classification so this project uses image recognition techniques to try and classify sounds. 
+The dataset used can be found in the repository and is called MNIST_Spoken_Digits.rar. This dataset contains spoken digits from 0 to 9. There are 3000 .wav files in the dataset and each individual spoken digit has 300 .wav files. There are 6 different speakers who generated these .wav files. Each sound file is transformed into a spectrogram prior to classification so this project uses image recognition techniques to try and classify sounds. 
 
 * Sample Spectrogram:
 
@@ -99,11 +99,25 @@ K Means doesn't use any labels. Instead, it tries to create clusters by minimizi
 * Benchmarking:   
 Since K Means is an unsupervised technique, the benchmarking will be different and albeit a bit simpler. There are no true labels in an unsupervised machine learning technique so the only way to see how well it performs is if each cluster produced looks like what would be expected. In this case, there should be 10 clusters with 300 data points in each cluster. 
 
+K Means was mostly included for curiosity as there is no direct way to compare it with the other supervised machine learning techniques. 
+
 * Result: 
 
 ![image](https://user-images.githubusercontent.com/85899973/141888353-262b5bbb-649c-4377-b0c4-1b54dcc52b7e.png)
 
 * Conclusion:  
-
+On average, each cluster size is 45.6 off of 300. Looking at the graph though, each cluster looks like they are too far from 300 to consider K Means to be a good method for clustering spectrograms. 
 
 # Conclusion
+
+* Overall, K nearest neighbors performed the best with an overall accuracy of 90.86%. Further inspection of the spectrograms suggests that this may be because the spectrograms of voices of individuals are similar to each other. 
+
+![image](https://user-images.githubusercontent.com/85899973/142049590-efa09703-39f8-4027-b7c6-f55595a232d0.png)
+
+This doesn't nullify the findings but it does suggest that K nearest neighbors performs well at recognizing a person's voice as opposed to recognizing a spoken digit. Further research will be needed to see if this is true or not. 
+
+* Naive Gaussian Bayes performed second best with an overall accuracy of 65.59%. The results per digit seems to fluctuate with certain digits having a high prediction accuracy while other digits had low prediction accuracy. An interesting thing to note was that digits that were overpredicted tend to have lower prediction accuracy. This may suggest that certain Gaussian distributions for certain digits were simply too large. 
+
+* Decision Trees performed the worse with an overall accuracy of 63.76%. This was expected since decision trees expect the features of the data set to have a high correlation to the output but the features of each spectrogram are simply pixels which carry little information and little correlation to the output. No matter how the results are analyzed, most accuracies hover around 60% which suggests that decision trees perform a little better than random guessing. 
+
+* K Means was included for curiosity but cannot be directly compared to the other 3 techniques. 
