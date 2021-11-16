@@ -75,16 +75,31 @@ Overall, decision trees performed poorly when trying to classify spectrograms. I
 
 # K Nearest Neighbors
 
-Result: 
+* Result: 
 
-![image](https://user-images.githubusercontent.com/85899973/141875026-55be1056-c084-4fed-9343-5a973769e1dd.png)
+![image](https://user-images.githubusercontent.com/85899973/141884791-e9e7e993-3d5b-44e8-b380-d9f9154a1605.png)
 
-Overall Accuracy: 91.26% 
+Overall Accuracy: 90.86%
 
-Deeper Analysis: 
+* Deeper Analysis: 
 
-![image](https://user-images.githubusercontent.com/85899973/141875238-e30b0e55-7dd4-4ca9-9f51-100696c3ec05.png)![image](https://user-images.githubusercontent.com/85899973/141875247-9790d167-d4bf-438e-af69-74ea682c056e.png)![image](https://user-images.githubusercontent.com/85899973/141875250-667ef4b9-6f4f-4d5b-b306-671a795f9b42.png)
+![image](https://user-images.githubusercontent.com/85899973/141884858-a26701c9-0a47-4733-9a11-fc60cf371b84.png)![image](https://user-images.githubusercontent.com/85899973/141884871-fefb0486-5861-48e3-bcee-8e1736d4dcb7.png)![image](https://user-images.githubusercontent.com/85899973/141884881-3b83e1bf-52b8-456d-acfc-f18f8ad03785.png)
+
+* Conclusion:
+Easily the best performing technique so far with an accuracy of 90.86%. Still far from ideal but it is something that can be further worked upon. Also, the graphs from the deeper analysis don't show any glaring flaws either. 
+  * The percent accuracy per true label ranges from 85.67% to 96%. The lowest accuracy is 85.67% which isn't great but isn't bad either. The true labels this model struggles the most with are 3,6,7 and 9. 
+  * The percent accuracy per predicted label ranges from 83.33% to 96.99%. As before, the lowest accuracy is 83.33% which isn't great but isn't terrible either. The predicted labels with the lowest accuracies are 1,2 and 3. 
+  * There is no obvious dominating or under-represented digit in prediction frequency. Each digit was predicted roughly the same number of times which is what the model should predict. 
 
 # K Means 
+
+* How it works: 
+
+K Means doesn't use any labels. Instead, it tries to create clusters by minimizing distance between 
+
+* Benchmarking: 
+Since K Means is an unsupervised technique, the benchmarking will be different and albeit a bit simpler. There are no true labels in an unsupervised machine learning technique so the only way to see how well it performs is if each cluster produced looks like what would be expected. In this case, there should be 10 clusters with 300 data points in each cluster. 
+
+
 
 # Conclusion
