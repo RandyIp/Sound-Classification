@@ -100,6 +100,9 @@ K Means doesn't use any labels. Instead, it tries to create clusters by minimizi
 * Benchmarking: 
 Since K Means is an unsupervised technique, the benchmarking will be different and albeit a bit simpler. There are no true labels in an unsupervised machine learning technique so the only way to see how well it performs is if each cluster produced looks like what would be expected. In this case, there should be 10 clusters with 300 data points in each cluster. 
 
+* Result: 
+
+![image](https://user-images.githubusercontent.com/85899973/141888353-262b5bbb-649c-4377-b0c4-1b54dcc52b7e.png)
 
 
 # Conclusion
