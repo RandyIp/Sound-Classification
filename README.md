@@ -41,7 +41,7 @@ Overall Accuracy: 65.59%
 
 * Deeper Analysis: 
 
-![image](https://user-images.githubusercontent.com/85899973/141874037-c5984dce-9cb9-4218-8bcc-8c083d9b59f1.png)![image](https://user-images.githubusercontent.com/85899973/141874057-59737032-b699-4f13-8b0e-9586bbc679fc.png)![image](https://user-images.githubusercontent.com/85899973/141874074-8b09e37a-d418-4f02-8a37-f568ffe0d412.png)
+![image](https://user-images.githubusercontent.com/85899973/141875144-5c8adb7b-3eb8-4d51-a1d7-d53a72cfef48.png)![image](https://user-images.githubusercontent.com/85899973/141875159-6e5736c3-0b8b-4ee7-abf4-213840ddc609.png)![image](https://user-images.githubusercontent.com/85899973/141875168-a776e2f6-4cb3-4c1f-b8d2-58d8b79dafda.png)
 
 * Conclusion:  
 Overall, Gaussian Naive Bayes performed poorly. It has an overall accuracy of 65.59% which is a little better than pure random guessing. 
@@ -79,3 +79,8 @@ Overall Accuracy: 91.26%
 
 Deeper Analysis: 
 
+![image](https://user-images.githubusercontent.com/85899973/141875238-e30b0e55-7dd4-4ca9-9f51-100696c3ec05.png)![image](https://user-images.githubusercontent.com/85899973/141875247-9790d167-d4bf-438e-af69-74ea682c056e.png)![image](https://user-images.githubusercontent.com/85899973/141875250-667ef4b9-6f4f-4d5b-b306-671a795f9b42.png)
+
+# K Means 
+
+# Conclusion
