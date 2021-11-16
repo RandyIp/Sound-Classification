@@ -12,7 +12,9 @@ Unsupervised Machine Learning Techniques used:
  
 The dataset used can be found in the repository and is called MNIST_Spoken_Digits.rar. This dataset contains spoken digits from 0 to 9. There are 3000 .wav files in the dataset and each individual spoken digit has 300 .wav files. Each sound file is transformed into a spectrogram prior to classification so this project uses image recognition techniques to try and classify sounds. 
 
-![image](https://user-images.githubusercontent.com/85899973/141192136-4e99f390-5a45-4fed-9dfe-183aee0da503.png)
+* Sample Spectrogram:
+
+![image](https://user-images.githubusercontent.com/85899973/141873639-577d985b-b4f3-4bb4-b5eb-ffc04f355a90.png)
 
 # Benchmarking
 
@@ -33,13 +35,13 @@ Gaussian Naive Bayes is a model based supervised machine learning technique. It 
 
 * Result: 
 
-![image](https://user-images.githubusercontent.com/85899973/141359174-cc156ad7-0932-4303-ad91-1220cb8405cf.png)
+![image](https://user-images.githubusercontent.com/85899973/141873676-2d11c4d8-c974-4a30-916c-019c8b66863a.png)
 
 Overall Accuracy: 65.59%
 
 * Deeper Analysis: 
 
-![image](https://user-images.githubusercontent.com/85899973/141837490-3a6f4309-cdb4-4e4a-8a51-b0b60ba785a2.png)![image](https://user-images.githubusercontent.com/85899973/141837550-1688f50b-07fa-42b7-bc48-52215c6109cb.png)![image](https://user-images.githubusercontent.com/85899973/141837606-f4fdf3f6-5037-43ca-9219-a19be0102bab.png)
+![image](https://user-images.githubusercontent.com/85899973/141874037-c5984dce-9cb9-4218-8bcc-8c083d9b59f1.png)![image](https://user-images.githubusercontent.com/85899973/141874057-59737032-b699-4f13-8b0e-9586bbc679fc.png)![image](https://user-images.githubusercontent.com/85899973/141874074-8b09e37a-d418-4f02-8a37-f568ffe0d412.png)
 
 * Conclusion:  
 Overall, Gaussian Naive Bayes performed poorly. It has an overall accuracy of 65.59% which is a little better than pure random guessing. 
@@ -56,4 +58,24 @@ Decision Trees try to classify data points by separating each data point by thei
 Even though the results are expected to be poor, the goal of this project is to benchmark each technique. This particular experiment is to verify the expected result. 
 
 * Result: 
+
+![image](https://user-images.githubusercontent.com/85899973/141873280-ff75db0d-c255-44eb-8654-6dbc6b3ac796.png)
+
+Overall Accuracy: 62.13%
+
+* Deeper Analysis: 
+
+![image](https://user-images.githubusercontent.com/85899973/141874494-ccfa54f9-9a08-4b5d-bd81-147c0bff367b.png)![image](https://user-images.githubusercontent.com/85899973/141874499-e370a302-292e-43e9-b653-82d72804957f.png)![image](https://user-images.githubusercontent.com/85899973/141874508-69135351-41c4-4816-ba9b-74243a9cca2f.png)
+
+* Conclusion:
+
+# K Nearest Neighbors
+
+Result: 
+
+![image](https://user-images.githubusercontent.com/85899973/141875026-55be1056-c084-4fed-9343-5a973769e1dd.png)
+
+Overall Accuracy: 91.26% 
+
+Deeper Analysis: 
 
