@@ -46,7 +46,7 @@ Overall Accuracy: 65.59%
 * Conclusion:  
 Overall, Gaussian Naive Bayes performed poorly. It has an overall accuracy of 65.59% which is a little better than pure random guessing. 
 
-  * The accuracy can be further analyzed by looking at the accuracy given a true label and the accuracy give a predicted label. Given any true label, the accuracy fluctuates between 46% and 77%. This isn't very impressive as it suggests for digits like 2,5 and 7 the model is just purely guessing and even for it's best digit (spoken digit 8) it only does ok at best. 
+  * The accuracy can be further analyzed by looking at the accuracy given a true label and the accuracy give a predicted label. Given any true label, the accuracy fluctuates between 46% and 77%. This isn't very impressive as it suggests for digits like 3,5 and 7 the model is just purely guessing and even for it's best digit (spoken digit 8) it only does ok at best. 
   * A similar analysis can be done given that the model has predicted a spoken digit. Given any predicted label the accuracy fluctuates between 46% and 82%. This is also a poor result. Given that the model predicts a digit like 2,5 or 9, it is as good as a random guess. Given digits like 0,4 or 6 the model performs ok at best.
   * This particular model overpredicts 9 as the spoken digit. Within the code are tests using this model without the spoken digit 9 but since the results did not improve much, they were not added to this document. 
 
@@ -59,15 +59,19 @@ Even though the results are expected to be poor, the goal of this project is to 
 
 * Result: 
 
-![image](https://user-images.githubusercontent.com/85899973/141873280-ff75db0d-c255-44eb-8654-6dbc6b3ac796.png)
+![image](https://user-images.githubusercontent.com/85899973/141882753-7f28d775-fd52-4242-bfe1-46926509821f.png)
 
-Overall Accuracy: 62.13%
+Overall Accuracy: 63.76%
 
 * Deeper Analysis: 
 
-![image](https://user-images.githubusercontent.com/85899973/141874494-ccfa54f9-9a08-4b5d-bd81-147c0bff367b.png)![image](https://user-images.githubusercontent.com/85899973/141874499-e370a302-292e-43e9-b653-82d72804957f.png)![image](https://user-images.githubusercontent.com/85899973/141874508-69135351-41c4-4816-ba9b-74243a9cca2f.png)
+![image](https://user-images.githubusercontent.com/85899973/141882798-ecc13d77-f89d-4750-b4e8-23605d4f289f.png)![image](https://user-images.githubusercontent.com/85899973/141882817-3e4baa32-5f93-4021-96ef-89c9a7513170.png)![image](https://user-images.githubusercontent.com/85899973/141882837-0fd7b2ca-899c-45a2-bfe4-076152e69db3.png)
 
 * Conclusion:
+Overall, decision trees performed poorly when trying to classify spectrograms. It has an even lower overall accuracy of 63.76% which is slightly better than guessing. Furthermore, when looking at the deeper analysis, the individaul accuracies are very poor as well. 
+  * The accuracy per true label fluctuates between 49.33% and 75%. While this looks similar to Naive Gaussian Bayes, it may actually be worse. Most true labels hover around a 60% accuracy which means given any true label the model is mostly just guessing. Compared to Naive Gaussian Bayes, even though it wasn't performing well with every true label, it did perform well with some. 
+  * The accuracy per predicted label fluctuates between 51.03% and 71.79%. Similar to percent accuracy per true label, the percent accuracy per predicted label seems to be consistently low and most predicted labels hover around 60% accuracy. 
+  * No number was overpredicted with decision trees unlike in Naive Gaussian Bayes. It looks like most digits were predicted at roughly the same frequency which is good. This is the only aspect in which decision trees seemed to work well, no individual digit dominated or was under-represented. 
 
 # K Nearest Neighbors
 
