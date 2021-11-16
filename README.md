@@ -67,7 +67,7 @@ Overall Accuracy: 63.76%
 
 ![image](https://user-images.githubusercontent.com/85899973/141882798-ecc13d77-f89d-4750-b4e8-23605d4f289f.png)![image](https://user-images.githubusercontent.com/85899973/141882817-3e4baa32-5f93-4021-96ef-89c9a7513170.png)![image](https://user-images.githubusercontent.com/85899973/141882837-0fd7b2ca-899c-45a2-bfe4-076152e69db3.png)
 
-* Conclusion:
+* Conclusion:  
 Overall, decision trees performed poorly when trying to classify spectrograms. It has an even lower overall accuracy of 63.76% which is slightly better than guessing. Furthermore, when looking at the deeper analysis, the individaul accuracies are very poor as well. 
   * The accuracy per true label fluctuates between 49.33% and 75%. While this looks similar to Naive Gaussian Bayes, it may actually be worse. Most true labels hover around a 60% accuracy which means given any true label the model is mostly just guessing. Compared to Naive Gaussian Bayes, even though it wasn't performing well with every true label, it did perform well with some. 
   * The accuracy per predicted label fluctuates between 51.03% and 71.79%. Similar to percent accuracy per true label, the percent accuracy per predicted label seems to be consistently low and most predicted labels hover around 60% accuracy. 
@@ -85,7 +85,7 @@ Overall Accuracy: 90.86%
 
 ![image](https://user-images.githubusercontent.com/85899973/141884858-a26701c9-0a47-4733-9a11-fc60cf371b84.png)![image](https://user-images.githubusercontent.com/85899973/141884871-fefb0486-5861-48e3-bcee-8e1736d4dcb7.png)![image](https://user-images.githubusercontent.com/85899973/141884881-3b83e1bf-52b8-456d-acfc-f18f8ad03785.png)
 
-* Conclusion:
+* Conclusion:  
 Easily the best performing technique so far with an accuracy of 90.86%. Still far from ideal but it is something that can be further worked upon. Also, the graphs from the deeper analysis don't show any glaring flaws either. 
   * The percent accuracy per true label ranges from 85.67% to 96%. The lowest accuracy is 85.67% which isn't great but isn't bad either. The true labels this model struggles the most with are 3,6,7 and 9. 
   * The percent accuracy per predicted label ranges from 83.33% to 96.99%. As before, the lowest accuracy is 83.33% which isn't great but isn't terrible either. The predicted labels with the lowest accuracies are 1,2 and 3. 
@@ -93,16 +93,17 @@ Easily the best performing technique so far with an accuracy of 90.86%. Still fa
 
 # K Means 
 
-* How it works: 
+* How it works:  
+K Means doesn't use any labels. Instead, it tries to create clusters by minimizing the variance within each cluster. The algorithm is an iterative one in which data points are assigned to the cluster which has the closest mean and then the means are updated by the data points which are assigned to that cluster. Initial starting points are random. (Usually random data points, but the updated means do not need to be an actual data point.)
 
-K Means doesn't use any labels. Instead, it tries to create clusters by minimizing distance between 
-
-* Benchmarking: 
+* Benchmarking:   
 Since K Means is an unsupervised technique, the benchmarking will be different and albeit a bit simpler. There are no true labels in an unsupervised machine learning technique so the only way to see how well it performs is if each cluster produced looks like what would be expected. In this case, there should be 10 clusters with 300 data points in each cluster. 
 
 * Result: 
 
 ![image](https://user-images.githubusercontent.com/85899973/141888353-262b5bbb-649c-4377-b0c4-1b54dcc52b7e.png)
+
+* Conclusion:  
 
 
 # Conclusion
