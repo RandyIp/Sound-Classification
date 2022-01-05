@@ -1,4 +1,4 @@
-# Goal: 
+ # Goal: 
 The goal of this project is to benchmark machine learning techniques when used to classify sound files. 
 
 Supervised Machine Learning Techniques used:  
